@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Script Management for AI Content Generation
 
-## Getting Started
+## 1. Project Purpose
 
-First, run the development server:
+This project is a web application designed to streamline the pre-automation of creating various text-based content using Large Language Models (LLMs) like Google's Gemini and OpenAI's ChatGPT. It provides users with a centralized platform to manage their script-creation requests, track their history, and organize generated content efficiently. The goal is to enhance productivity for content creators, marketers, and developers who regularly leverage AI for content generation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 2. Core Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **AI Model Integration:** Connects to various AI APIs (e.g., Gemini, ChatGPT) to generate content.
+*   **Script Management:** Users can create, edit, and manage their script prompts and requests.
+*   **History Tracking:** Provides a complete history of all AI content generation requests and their responses.
+*   **Content Organization:** Allows for easy organization and retrieval of previously generated content.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 3. Development Environment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is built with the following technologies:
 
-## Learn More
+*   **Node.js:** (Please specify your version, e.g., `v20.x.x` or newer recommended)
+*   **Next.js:** `15.5.2`
+*   **React:** `19.1.0`
+*   **TypeScript:** `^5`
+*   **Tailwind CSS:** `^4`
+*   **ESLint:** `^9`
 
-To learn more about Next.js, take a look at the following resources:
+## 4. Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Make sure you have a recent LTS version of Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  Clone the repository (or download the source code).
+2.  Navigate to the project's root directory.
+3.  Install the required dependencies using npm:
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Running the Application
+
+1.  **Development Mode:**
+    To run the application in development mode with live reloading, execute the following command:
+    ```bash
+    npm run dev
+    ```
+    Open your browser and navigate to `http://localhost:3000`.
+
+2.  **Production Build:**
+    To create a production-ready build of the application, run:
+    ```bash
+    npm run build
+    ```
+
+3.  **Running in Production:**
+    To start the application in production mode (after building it), use:
+    ```bash
+    npm run start
+    ```
